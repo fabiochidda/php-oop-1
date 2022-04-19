@@ -7,6 +7,8 @@ $fnf = new Movie(
     "Rob Cohen",
     "Lorem Ipsum",
     "2001",
+    "4,4",
+    "EN",
 );
 
 $interstellar = new Movie(
@@ -14,6 +16,8 @@ $interstellar = new Movie(
     "Cristopher Nolan",
     "Lorem Ipsum",
     "2014",
+    "4,7",
+    "EN",
 );
 
 ?>
@@ -34,6 +38,7 @@ $interstellar = new Movie(
         <p> <?php echo $fnf->director ?> </p>
         <p> <?php echo $fnf->description ?> </p>
         <p> <?php echo $fnf->year ?> </p>
+        <p> <?php echo $fnf->getVoteAndLang()?></p>
     </div>
 
     <div>
@@ -41,6 +46,7 @@ $interstellar = new Movie(
         <p> <?php echo $interstellar->director ?> </p>
         <p> <?php echo $interstellar->description ?> </p>
         <p> <?php echo $interstellar->year ?> </p>
+        <p> <?php echo $interstellar->getVoteAndLang()?></p>
     </div>
 
 
